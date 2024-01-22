@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	<OutputType>Library</OutputType>
+	<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+	<Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+	<Title>A2Z.Episerver.Labs.LanguageManager.GoogleTranslate</Title>
+	<PackageId>A2Z.Episerver.Labs.LanguageManager.GoogleTranslate</PackageId>
+	<Authors>Adnan Zameer</Authors>
+	<Version>1.0.0</Version>
+	<Description>An extension for EPiServer.Labs.LanguageManager facilitating translation through Google Cloud Translation.</Description>
+	<PackageTags>Optimizely LanguageManager Google Translate GoogleTranslate Translation GoogleCloudTranslation</PackageTags>
+	<PackageProjectUrl>https://github.com/adnanzameer/A2Z.Episerver.Labs.LanguageManager.GoogleTranslate</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/adnanzameer/A2Z.Episerver.Labs.LanguageManager.GoogleTranslate</RepositoryUrl>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	<PackageReleaseNotes>https://github.com/adnanzameer/A2Z.Episerver.Labs.LanguageManager.GoogleTranslate/blob/master/CHANGELOG.md</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="EPiServer.Labs.LanguageManager" Version="[5.0.0, 6.0.0)" />
+	<PackageReference Include="EPiServer.CMS.UI" Version="[12.0.2, 13.0.0)" />
+	<PackageReference Include="Google.Cloud.Translation.V2" Version="3.2.0" />
+  </ItemGroup>
+
+</Project>
