@@ -8,7 +8,7 @@
 	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	<OutputPath>bin\</OutputPath>
 	<PackageId>A2Z.Episerver.Labs.LanguageManager.GoogleTranslate</PackageId>
-	<Version>10.0.0</Version>
+	<Version>3.0.0</Version>
 	<Description>An extension for EPiServer.Labs.LanguageManager facilitating translation through Google Cloud Translation.</Description>
 	<Authors>Adnan Zameer</Authors>
 	<IsPackable>True</IsPackable>
