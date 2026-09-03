@@ -4,9 +4,8 @@ The **A2Z.Episerver.Labs.LanguageManager.GoogleTranslate** is a freely available
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U2STV29)
 
 ## Description
-[![Platform](https://img.shields.io/badge/Platform-.NET%206-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
-[![Platform](https://img.shields.io/badge/Optimizely-%2012-blue.svg?style=flat)](http://world.episerver.com/cms/)
-[![Platform](https://img.shields.io/badge/EPiServer-%2012-orange.svg?style=flat)](http://world.episerver.com/cms/)
+[![Platform](https://img.shields.io/badge/Platform-.NET%2010-blue.svg?style=flat)](https://docs.microsoft.com/en-us/dotnet/)
+[![Platform](https://img.shields.io/badge/Optimizely-%2013-blue.svg?style=flat)](http://world.episerver.com/cms/)
 
 This extension for Optimizely CMS empowers EPiServer.Labs.LanguageManager to automatically translate content through Google Cloud Translation.
 
@@ -43,6 +42,10 @@ Feel free to submit a pull request if you identify any areas that could be enhan
 If you have new ideas or feature requests that can make this tool even more useful for you or the community, please feel free to open a new issue at the following link.
 
 https://github.com/adnanzameer/A2Z.Episerver.Labs.LanguageManager.GoogleTranslate/issues
+
+## Optimizely (Episerver) CMS 12 Support
+
+For users still on Optimizely (Episerver) CMS 12, the package is available on: https://github.com/adnanzameer/A2Z.Episerver.Labs.LanguageManager.GoogleTranslate/tree/CMS12
 
 ## Changelog
 

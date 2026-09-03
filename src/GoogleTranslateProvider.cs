@@ -1,5 +1,5 @@
 ﻿using System;
-using EPiServer.Labs.LanguageManager;
+using System.Threading.Tasks;
 using EPiServer.Labs.LanguageManager.Business.Providers;
 using EPiServer.Labs.LanguageManager.Configuration;
 using EPiServer.Labs.LanguageManager.Models;
@@ -7,22 +7,19 @@ using Google.Cloud.Translation.V2;
 
 namespace A2Z.Episerver.Labs.LanguageManager.GoogleTranslate
 {
-    public class GoogleTranslateProvider : IMachineTranslatorProvider
+    public class GoogleTranslateProvider(ILanguageManagerConfig languageManagerConfig) : IMachineTranslatorProvider
     {
-        private TranslationClient TranslationClient;
+        private TranslationClient _translationClient;
+
         public string DisplayName => "Google Translate";
 
         public bool Initialize(ITranslatorProviderConfig config)
         {
-            var languageManagerOptions = new LanguageManagerOptions();
-            var languageManagerConfig = new LanguageManagerConfig(languageManagerOptions);
-            var subscriptionKey = languageManagerConfig.ActiveTranslatorProvider.SubscriptionKey;
-
-            TranslationClient = TranslationClient.CreateFromApiKey(subscriptionKey);
+            _translationClient = TranslationClient.CreateFromApiKey(languageManagerConfig.ActiveTranslatorProvider.SubscriptionKey);
             return true;
         }
 
-        public TranslateTextResult Translate(string inputText, string sourceLanguage, string targetLanguage)
+        public async Task<TranslateTextResult> TranslateAsync(string inputText, string sourceLanguage, string targetLanguage)
         {
             var translateTextResult = new TranslateTextResult
             {
@@ -37,7 +34,7 @@ namespace A2Z.Episerver.Labs.LanguageManager.GoogleTranslate
 
             try
             {
-                var response = TranslationClient.TranslateText(inputText, targetLanguage, sourceLanguage);
+                var response = await _translationClient.TranslateTextAsync(inputText, targetLanguage, sourceLanguage);
                 translateTextResult.Text = response.TranslatedText;
                 translateTextResult.IsSuccess = true;
             }

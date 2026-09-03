@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.34330.188
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11709.299 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A2Z.Episerver.Labs.LanguageManager.GoogleTranslate", "src\A2Z.Episerver.Labs.LanguageManager.GoogleTranslate.csproj", "{5481F6B9-CA81-4B05-BD50-9D0098030552}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandbox", "Sandbox", "{11B64EF0-1C96-4C2D-8F54-1E428538FDB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{5EEFF4DA-8AD9-E42C-6F15-4A668E5D6006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{5481F6B9-CA81-4B05-BD50-9D0098030552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5481F6B9-CA81-4B05-BD50-9D0098030552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5481F6B9-CA81-4B05-BD50-9D0098030552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEFF4DA-8AD9-E42C-6F15-4A668E5D6006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EEFF4DA-8AD9-E42C-6F15-4A668E5D6006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EEFF4DA-8AD9-E42C-6F15-4A668E5D6006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EEFF4DA-8AD9-E42C-6F15-4A668E5D6006}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EEFF4DA-8AD9-E42C-6F15-4A668E5D6006} = {11B64EF0-1C96-4C2D-8F54-1E428538FDB9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95DF84C3-1703-4B78-9BB0-BD2633661149}
