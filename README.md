@@ -9,7 +9,7 @@ The **A2Z.Episerver.Labs.LanguageManager.GoogleTranslate** is a freely available
 
 This extension for Optimizely CMS empowers EPiServer.Labs.LanguageManager to automatically translate content through Google Cloud Translation.
 
-The extension leverages the Google.Cloud.Translation.V2 NuGet package, enabling seamless integration with the Google Cloud Translation API. 
+The extension leverages the **Google.Cloud.Translation.V2** NuGet package, enabling seamless integration with the Google Cloud Translation API.
 
 ## Installation
 
@@ -25,7 +25,23 @@ To enable LanguageManager to utilize the Google Translate Provider, configure it
 
 ![Configure translator provider](img/translator-provider.png)
 
-All you need is a **'Subscription Key'** for this extension to function. Find detailed instructions on how to create one here https://cloud.google.com/translate/docs/setup
+All you need is a **Google Cloud Translation API key** (entered as the **Subscription Key**). Follow the steps below to create one.
+
+### Getting a Google Cloud Translation API Key
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/)
+2. Create or select a project
+3. Enable the **Cloud Translation API**:
+   - Navigate to **APIs & Services → Library**
+   - Search for **Cloud Translation API** and click **Enable**
+4. Create an API key:
+   - Navigate to **APIs & Services → Credentials**
+   - Click **+ Create Credentials → API key**
+   - Copy the generated key
+5. *(Recommended)* Restrict the key to the Cloud Translation API only:
+   - Click **Edit API key → API restrictions** and select **Cloud Translation API**
+
+Paste the API key into the **Subscription Key** field in the Language Manager settings in Optimizely CMS.
 
 ## Usage
 
